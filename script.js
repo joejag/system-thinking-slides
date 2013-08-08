@@ -197,6 +197,15 @@
 				}
 			break;
 
+			case 80: // p for PECHA KUCHA MODE!!!
+              setInterval(function() { 
+		          var currentSlideNumber = getCurrentSlideNumber();
+                  if (currentSlideNumber < slideList.length - 1) {
+				      goToSlide(currentSlideNumber + 1);
+                  }
+              }, 20000)
+            break;
+
 			case 33: // PgUp
 			case 38: // Up
 			case 37: // Left
